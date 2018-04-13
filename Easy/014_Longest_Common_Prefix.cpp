@@ -6,6 +6,7 @@ using namespace std;
 class Solution {
 public:
     string longestCommonPrefix_1(vector<string>& strs) {
+        /* Brute force */
         /* m: length of string */
         /* n: number of strings in array */
         /* Time: O(mn), space: O(1) */
@@ -30,6 +31,7 @@ public:
     }
 
     string longestCommonPrefix_2(vector<string>& strs) {
+        /* Sorting and comparing */
         /* m: length of string */
         /* n: number of strings in array */
         /* Time: O(m + n log n), space: O(1) */
