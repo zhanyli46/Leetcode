@@ -9,7 +9,7 @@ struct TreeNode {
 
 class Solution {
 public:
-    bool isBalanced_1(TreeNode* root) {
+    bool isBalanced(TreeNode* root) {
         /* Naive recursion */
         /* Time: O(n^2), space: O(1) */
         /* Runtime: 18ms */

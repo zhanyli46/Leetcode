@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> twoSum_1(vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int>& nums, int target) {
         /* Brute force */
         /* Time O(n^2), space O(1) */
         /* Runtime: 162ms */
@@ -18,7 +18,7 @@ public:
         }
     }
 
-    vector<int> twoSum_2(vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int>& nums, int target) {
         /* Hash map */
         /* Time O(n), Space O(n) */
         /* Runtime: 9ms */

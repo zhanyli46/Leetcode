@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
 public:
-    string addBinary_1(string a, string b) {
+    string addBinary(string a, string b) {
         /* Add to the front */
         /* Time: O(n^2), space: O(1) */
         /* Runtime: 5ms */
@@ -22,7 +22,7 @@ public:
         return sum;
     }
 
-    string addBinary_2(string a, string b) {
+    string addBinary(string a, string b) {
         /* Add to back and reverse */
         /* Time: O(n), space: O(1) */
         /* Runtime: 5ms */

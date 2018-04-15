@@ -2,7 +2,7 @@ using namespace std;
 
 class Solution {
 public:
-    int mySqrt_1(int x) {
+    int mySqrt(int x) {
         /* Brute force */
         /* Time: O(sqrt(n)), space: O(1) */
         /* Runtime: 49ms */
@@ -12,7 +12,7 @@ public:
         return i - 1;
     }
 
-    int mySqrt_2(int x) {
+    int mySqrt(int x) {
         /* Binary search */
         /* Time: O(log n), space: O(1) */
         /* Runtime: 37ms */
@@ -27,7 +27,7 @@ public:
         return j;
     }
 
-    int mySqrt_1(int x) {
+    int mySqrt(int x) {
         /* Newton's method */
         /* Time: ?, space: O(1) */
         /* Runtime: 37ms */
