@@ -4,7 +4,7 @@ class Solution {
 public:
     int mySqrt_1(int x) {
         /* Brute force */
-        /* Time: O(n), space: O(1) */
+        /* Time: O(sqrt(n)), space: O(1) */
         /* Runtime: 49ms */
         long i = 0;
         long square;
@@ -25,5 +25,16 @@ public:
             else j = mid - 1;
         }
         return j;
+    }
+
+    int mySqrt_1(int x) {
+        /* Newton's method */
+        /* Time: ?, space: O(1) */
+        /* Runtime: 37ms */
+        long g = x;
+        while (g * g > x) {
+            g = (g + x / g) / 2;
+        }
+        return g;
     }
 };
