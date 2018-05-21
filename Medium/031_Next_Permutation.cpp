@@ -12,8 +12,11 @@ public:
         /* Runtime: 18ms */
         vector<int>::iterator first = nums.begin(), last = nums.end();
         vector<int>::iterator i = last;
-        // if nums is empty or has only one element, return
         if (first == last || first == --i) return;
+        // 1) Find the first (i, ip1) pair where i < ip1, starting from the back
+        // 2) Find the first j where i >= j, j starting from the back
+        // 3) Swap i and j
+        // 4) Reverse the subarray (ip1, end)
         while (true) {
             vector<int>::iterator ip1 = i;
             // i points to last element where *i < *(i + 1)
