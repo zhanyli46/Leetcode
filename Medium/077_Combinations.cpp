@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> combine(int n, int k) {
-        /* Time: O(n^2), space: O(n) */
+        /* Time: O(n (n C k)), space: O(n) */
         /* Runtime: 48ms */
         vector<vector<int>> combs;
         vector<int> cur_comb;

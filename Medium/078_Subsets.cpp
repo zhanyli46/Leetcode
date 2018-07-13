@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        // Time: O(n^3), space: O(n)
+        // Time: O(2^n), space: O(n)
         // Runtime: 4ms
         int n = nums.size();
         vector<vector<int>> subsets;
