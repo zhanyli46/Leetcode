@@ -44,10 +44,10 @@ public:
         if (n < 2) return s;
         while (i < n && n - i > max_len / 2) {
             left = right = i;
-            while (right < len - 1 && s[right] == s[right + 1])
+            while (right < n - 1 && s[right] == s[right + 1])
                 ++right;
             i = right + 1;
-            while (right < len - 1 && left > 0 && s[left - 1] == s[right + 1]) {
+            while (right < n - 1 && left > 0 && s[left - 1] == s[right + 1]) {
                 --left;
                 ++right;
             }
